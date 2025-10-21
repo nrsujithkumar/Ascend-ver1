@@ -1,0 +1,16 @@
+import React from 'react';
+import { LegalSection } from './LegalSection';
+
+export const TermsContent = () => (
+    <div className="text-sm text-gray-700 dark:text-gray-400">
+        <p className="mb-4">Last Updated: September 27, 2025</p>
+        <p className="mb-6">Welcome to Ascend! These Terms of Service ("Terms") govern your use of the Ascend application (the "Service"), operated by Ascend Technologies Inc. By using our Service, you agree to these Terms.</p>
+        <LegalSection title="1. User Accounts & Conduct"><p>You must be at least 13 years old to use Ascend. You are responsible for your account's security and all activities under it. You agree not to engage in any activity that is unlawful, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable. This includes respecting other users within your Clans.</p></LegalSection> {/* */}
+        <LegalSection title="2. User-Generated Content"><p>You own the content you create on Ascend, including your goals, check-in notes, and any photos you upload ("User Content"). However, by posting User Content, you grant Ascend a worldwide, non-exclusive, royalty-free license to use, display, reproduce, and distribute it in connection with the Service (e.g., showing your public goals to your Clan).</p><p>You are solely responsible for your User Content and agree not to post content that is illegal, infringes on any third party's rights, or violates our conduct rules.</p></LegalSection> {/* */}
+        <LegalSection title="3. Social Features (Clans)"><p>Ascend's "Clans" feature is for mutual support and accountability. You agree to interact with other Clan members respectfully. Ascend is not responsible for the conduct of any user in a Clan. We reserve the right to remove users or disband Clans that violate our community standards.</p></LegalSection> {/* */}
+        <LegalSection title="4. Gamification & AI Mentor"><p>The points, badges, streaks, and other rewards within the Service are for motivational purposes only and hold no monetary value. The advice provided by the AI Mentor is for informational purposes only and is not a substitute for professional advice.</p></LegalSection> {/* */}
+        <LegalSection title="5. Our Intellectual Property"><p>The Service and its original content (excluding User Content), features, and functionality are and will remain the exclusive property of Ascend Technologies Inc. and its licensors.</p></LegalSection> {/* */}
+        <LegalSection title="6. Termination"><p>We may terminate or suspend your account at our sole discretion, without prior notice, for conduct that we believe violates these Terms or is otherwise harmful to other users or our business interests.</p></LegalSection> {/* */}
+        <LegalSection title="7. Disclaimers and Limitation of Liability"><p>The Service is provided "AS IS" without any warranties. Ascend Technologies Inc. will not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of the Service.</p></LegalSection> {/* */}
+    </div>
+);

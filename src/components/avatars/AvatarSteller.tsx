@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarStellar = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L13.7678 9.77775H22L15.1161 14.2222L16.8839 22L12 17.5557L7.11612 22L8.88388 14.2222L2 9.77775H10.2322L12 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/></svg>);

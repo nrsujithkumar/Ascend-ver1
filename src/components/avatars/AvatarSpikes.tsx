@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarSpikes = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L14 10L21 12L14 14L12 21L10 14L3 12L10 10L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/></svg>);

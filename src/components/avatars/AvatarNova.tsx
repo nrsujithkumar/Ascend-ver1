@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarNova = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M4 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M6.46447 6.46447L17.5355 17.5355" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M6.46447 17.5355L17.5355 6.46447" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>);

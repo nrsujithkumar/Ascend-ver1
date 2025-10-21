@@ -1,0 +1,66 @@
+/* 1. Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. Your global styles from StyleInjector [cite: 22] */
+html { scroll-behavior: smooth; }
+body { overscroll-behavior-y: none; }
+.aurora-bg {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    overflow: hidden; /* [cite: 23] */
+    background-color: #0a0a0a; z-index: 0; pointer-events: none; /* [cite: 23] */
+}
+.dark .aurora-bg { display: block; }
+.light .aurora-bg { display: none; }
+.aurora-bg::before, .aurora-bg::after {
+    content: ''; position: absolute; width: 150vw;
+    height: 150vh; /* [cite: 24] */
+    background: radial-gradient(circle at center, rgba(29, 78, 216, 0.2) 0%, rgba(29, 78, 216, 0) 50%); /* [cite: 24] */
+    animation: aurora-glow 20s infinite linear; will-change: transform, opacity; /* [cite: 25] */
+}
+.aurora-bg::after {
+    background: radial-gradient(circle at center, rgba(56, 189, 248, 0.2) 0%, rgba(56, 189, 248, 0) 50%);
+    animation-delay: 5s; animation-duration: 25s; /* [cite: 26] */
+}
+@keyframes aurora-glow {
+    0%   { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 0.3; } /* [cite: 27, 31] */
+    25%  { transform: translate(50%, -50%) scale(1.2) rotate(90deg); opacity: 0.5; } /* [cite: 27, 28] */
+    50%  { transform: translate(50%, 50%) scale(1.5) rotate(180deg); opacity: 0.7; } /* [cite: 28, 29] */
+    75%  { transform: translate(-50%, 50%) scale(1.2) rotate(270deg); opacity: 0.5; } /* [cite: 29, 30] */
+    100% { transform: translate(-50%, -50%) scale(1) rotate(360deg); opacity: 0.3; } /* [cite: 30, 31] */
+}
+.shimmer-text {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,1) 30%, rgba(0,0,0,.6) 50%, rgba(0,0,0,1) 70%); /* [cite: 31] */
+    -webkit-mask-size: 200%; animation: shimmer 2s infinite; /* [cite: 32] */
+}
+@keyframes shimmer {
+  from { -webkit-mask-position: 150%; } /* [cite: 32, 33] */
+  to { -webkit-mask-position: -50%; } /* [cite: 33, 34] */
+}
+.cta-button::before {
+    content: ""; /* [cite: 34] */
+    position: absolute; inset: 0; border-radius: 9999px; padding: 2px; /* [cite: 35] */
+    background: linear-gradient(45deg, #0ea5e9, #6366f1);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; /* [cite: 36] */
+    opacity: 0; transition: opacity 0.3s ease-in-out; /* [cite: 36] */
+}
+.cta-button:hover::before { opacity: 1; } /* [cite: 37, 38] */
+ /* Custom scrollbar for dropdown */
+.custom-scrollbar::-webkit-scrollbar { width: 4px; } /* [cite: 38, 39] */
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; } /* [cite: 39] */
+.custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(156, 163, 175, 0.5); } /* [cite: 40] */
+.custom-scrollbar::-webkit-scrollbar-thumb { border-radius: 20px; border: 3px solid transparent; } /* [cite: 41] */
+ .crown-reveal-bg {
+    background: linear-gradient(180deg, #020617 0%, #03071e 50%, #1e293b 100%); /* [cite: 41] */
+}
+.crown-reveal-dawn {
+    position: absolute; /* [cite: 42] */
+    bottom: 0; /* [cite: 43] */
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: radial-gradient(ellipse at bottom, #fde68a 0%, rgba(253, 230, 138, 0) 70%); /* [cite: 43] */
+    opacity: 0; /* [cite: 44] */
+}

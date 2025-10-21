@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarPulse = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/><path d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>);

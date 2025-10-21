@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarWeave = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 7L17 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M7 17L17 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" strokeWidth="1.5"/></svg>);

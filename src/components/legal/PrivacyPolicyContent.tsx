@@ -1,0 +1,15 @@
+import React from 'react';
+import { LegalSection } from './LegalSection';
+
+export const PrivacyPolicyContent = () => (
+    <div className="text-sm text-gray-700 dark:text-gray-400">
+        <p className="mb-4">Last Updated: September 27, 2025</p>
+        <p className="mb-6">This Privacy Policy explains how Ascend Technologies Inc. collects, uses, and shares information about you when you use our Service.</p> {/* */}
+        <LegalSection title="1. Information We Collect"><p><b>Account Information:</b> When you create an account, we collect your email address and chosen alias.</p><p><b>User Content:</b> We collect the goals you set, your daily check-in data (including any notes or photos you provide), and your interactions within Clans.</p><p><b>Usage Information:</b> We automatically collect information about your activity on the Service, such as streak data, XP earned, feature usage, and technical data like your IP address and device type.</p></LegalSection>
+        <LegalSection title="2. How We Use Your Information"><p>We use your information to provide and improve the Service, including:</p><ul className="list-disc list-inside space-y-2"><li>Operating and maintaining your account and streaks.</li><li>Displaying your progress and public goals to your Clan members.</li><li>Powering leaderboards and other social features.</li><li>Personalizing your experience, including suggestions from the AI Mentor.</li><li>Communicating with you about service updates and notifications.</li></ul></LegalSection> {/* */}
+        <LegalSection title="3. How We Share Information"><p>We do not sell your personal data. We may share information as follows:</p><ul className="list-disc list-inside space-y-2"><li><b>With Your Clan:</b> Your alias and any goals or updates you mark as public are visible to members of your Clan.</li><li><b>With Service Providers:</b> We may share information with vendors who perform services for us (e.g., cloud hosting).</li><li><b>For Legal Reasons:</b> We may disclose your information if required by law or to protect the rights and safety of our users or the public.</li></ul></LegalSection> {/* */}
+        <LegalSection title="4. Data Security & Retention"><p>We implement reasonable security measures to protect your information. We retain your data as long as your account is active or as needed to provide you with the Service.</p></LegalSection> {/* */}
+        <LegalSection title="5. Children's Privacy"><p>Our Service is not directed to individuals under 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information.</p></LegalSection> {/* */}
+        <LegalSection title="6. Your Rights and Choices"><p>You may review and update your account information at any time. You may also have the right to request access to or deletion of your personal data. Please contact us at support@ascend.app to make such a request.</p></LegalSection> {/* */}
+    </div>
+);

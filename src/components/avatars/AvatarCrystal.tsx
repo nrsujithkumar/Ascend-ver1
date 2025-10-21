@@ -1,0 +1,2 @@
+import React from 'react';
+export const AvatarCrystal = ({isSelected}: {isSelected?: boolean}) => (<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L22 9L18 22H6L2 9L12 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/><path d="M2 9L12 22L22 9" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/><path d="M6 22L12 9L18 22" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/></svg>);
